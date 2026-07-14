@@ -226,7 +226,7 @@ We release the **Soccer Factory** dataset containing 7,000 video sequences with 
 
 ### Download
 
-Download the following files from [link]:
+Download the following files from [Alipan](https://www.alipan.com/s/h5fev1Dd6a9) (access code: `4f4u`):
 
 | File | Contents | Size |
 |------|----------|------|
