@@ -1,4 +1,4 @@
-datasets/
+/codes/SoccerMaster/datasets
 
 __pycache__/
 *.py[cod]
@@ -10,7 +10,6 @@ pretrained_models
 *.txt
 *.pth
 *.csv
-datasets
 outputs
 
 # Deformable attention compiled files
