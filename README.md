@@ -222,7 +222,7 @@ CUDA_VISIBLE_DEVICES=0 python -m tracklab.main -cn gsr_step_3_example_accelerate
 
 ## Soccer Factory Dataset
 
-We release the **Soccer Factory** dataset containing 7,000 video sequences with per-frame annotations (bounding boxes, roles, jersey numbers, and camera parameters). The data is distributed as H.264-encoded videos and JSON annotations.
+We release the **Soccer Factory** dataset containing 7,000 videos with per-frame annotations (bounding boxes, roles, jersey numbers, and camera parameters). The data is distributed as H.264-encoded videos and JSON annotations.
 
 ### Download
 
@@ -230,14 +230,17 @@ Download the following files from [Dropbox](https://www.dropbox.com/scl/fo/dlurb
 
 | File | Contents | Size |
 |------|----------|------|
-| `soccer_factory_annotations.tar.gz` | Per-frame annotations (JSON) | 2.2 GB |
-| `soccer_factory_videos_part1.tar` | Videos for SNGS-10001 ~ SNGS-11000 | 15 GB |
-| `soccer_factory_videos_part2.tar` | Videos for SNGS-11001 ~ SNGS-12000 | 14 GB |
-| `soccer_factory_videos_part3.tar` | Videos for SNGS-12001 ~ SNGS-13000 | 15 GB |
-| `soccer_factory_videos_part4.tar` | Videos for SNGS-13001 ~ SNGS-14000 | 15 GB |
-| `soccer_factory_videos_part5.tar` | Videos for SNGS-14001 ~ SNGS-15000 | 14 GB |
-| `soccer_factory_videos_part6.tar` | Videos for SNGS-15001 ~ SNGS-16000 | 13 GB |
-| `soccer_factory_videos_part7.tar` | Videos for SNGS-16001 ~ SNGS-17000 | 13 GB |
+| `soccer_factory_annotations.tar.gz` | Per-frame annotations (JSON) | 2.4 GB |
+| `soccer_factory_videos_part1.tar` | 1,000 H.264 videos | 18.8 GB |
+| `soccer_factory_videos_part2.tar` | 1,000 H.264 videos | 18.0 GB |
+| `soccer_factory_videos_part3.tar` | 1,000 H.264 videos | 19.3 GB |
+| `soccer_factory_videos_part4.tar` | 1,000 H.264 videos | 19.5 GB |
+| `soccer_factory_videos_part5.tar` | 1,000 H.264 videos | 18.1 GB |
+| `soccer_factory_videos_part6.tar` | 1,000 H.264 videos | 16.5 GB |
+| `soccer_factory_videos_part7.tar` | 1,000 H.264 videos | 16.0 GB |
+| `SHA256SUMS` | SHA-256 checksums for the archives | < 1 KB |
+
+Each video archive contains 1,000 sequences. The parts preserve the order of the released ID list, so the IDs in an individual part are not necessarily a contiguous numeric range. Use the filenames within an archive rather than inferring an ID range from its part number. Verify downloaded files against `SHA256SUMS` before extraction.
 
 ### Setup
 
